@@ -1,6 +1,8 @@
 package com.github.perscholas;
 
 
+import java.util.Map;
+
 public class AppSystem extends TheSystem {
 	AppSystem() {
 	}
@@ -11,7 +13,12 @@ public class AppSystem extends TheSystem {
 	}
 
 	@Override
+	public Map<String, Item> getItemCollection() {
+		return null;
+	}
+
+	@Override
 	public Boolean add(Item item) {
-		// Your code here
+		return null;
 	}
 }

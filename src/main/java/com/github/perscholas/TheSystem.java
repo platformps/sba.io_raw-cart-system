@@ -2,26 +2,29 @@ package com.github.perscholas;
 
 
 import java.util.HashMap;
+import java.util.Map;
 
 public abstract class TheSystem {
-	private HashMap<String, Item> itemCollection;
+    private HashMap<String, Item> itemCollection;
 
-	TheSystem() {
-        itemCollection = new HashMap<String, Item>();
-        // Your code here
-	}
+    TheSystem() {
+        itemCollection = new HashMap<>();
+    }
 
-	public Boolean checkAvailability(Item item) {
-		// Your code here
-	}
-	
-	public Boolean add(Item item) {
-		// Your code here
-	}
+    public Boolean checkAvailability(Item item) {
+        return null;
+    }
 
-	public Item remove(String itemName) {
-		// Your code here
-	}
+    public Boolean add(Item item) {
+        return null;
+    }
 
-	public abstract void display();
+    public Item remove(String itemName) {
+        return null;
+    }
+
+    public abstract void display();
+
+    public abstract Map<String, Item> getItemCollection();
+
 }
